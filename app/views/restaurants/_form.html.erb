@@ -1,0 +1,18 @@
+<%= form_for @restaurant do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </div>
+
+  <div>
+    <%= f.label :rating %>
+    <%= f.number_field :rating, max: 5 %>
+  </div>
+
+  <%= f.submit %>
+<% end %>
